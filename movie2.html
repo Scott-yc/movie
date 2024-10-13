@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/movie_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <div class="brand_logo">
+                <img src="media/Logo.png" alt="movie-logo" class="Logo">
+                <h>Viusal Feast</h>
+            </div>
+            <div class="dropLang">
+                <button class="menu-button" id="language-button">English</button>
+                <ul class="dropdown">
+                    <li><a href="#" id="english">English</a></li>
+                    <li><a href="chinese.html" id="chinese">Chinese</a></li>
+                    <li><a href="Thai.html" id="thai">Thai</a></li>
+                    <li><a href="#" id="french">French</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <button id="toggleMenu"><img src="media/menu.png" alt=""></button>
+
+        <div class="page-links">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="heder_munt">
+                <a href="index.html"><button class="menu-button">Home</button></a>
+                <a href="Aboutus.html"><button class="menu-button">About us</button></a>
+                <a class="login" href="Login.html"><button class="menu-button">Login</button></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dxWvtMOGAhw?si=yTmtZv4f-AfDgVbs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/interaction.js"></script>
+</body>
+
+</html>

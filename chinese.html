@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VF</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <div class="brand_logo">
+                <img src="media/Logo.png" alt="movie-logo" class="Logo">
+                <h>视觉盛宴</h>
+            </div>
+
+            <div class="dropLang">
+                <button class="menu-button" id="language-button">中文</button>
+                <ul class="dropdown">
+                    <li><a href="index.html" id="english">英语</a></li>
+                    <li><a href="chinese.html" id="chinese">中文</a></li>
+                    <li><a href="Thai.html" id="thai">泰语</a></li>
+                    <li><a href="#" id="french">法语</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <button id="toggleMenu"><img src="media/menu.png" alt=""></button>
+
+        <div class="page-links">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="heder_munt">
+                <a href="index.html"><button class="menu-button">主页</button></a>
+                <a href="Aboutus.html"><button class="menu-button">关于我们</button></a>
+                <a class="login" href="Login.html"><button class="menu-button">登入</button></a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="main">
+        <video autoplay loop muted>
+            <source src="media/backgroundvideo3.mp4" type="video/mp4">
+        </video>
+        <audio id="audioPlayer" controls loop>
+            <source src="media/10月9日.MP3" type="audio/MP3">
+        </audio>
+        <h1 class="animated-text">欢迎来到视觉盛宴</h1>
+        <div class="movie-container">
+            <div class="movie">
+                <a href="movie1.html">
+                    <img src="media/movie1.png" alt="Movie 1" class="poster_size">
+                </a>
+                <div class="movie-info">
+                    <p1 class="movietitle">魔兽世界</p1>
+                    <button class="reviews-button">评论</button>
+                    <a href="meeting.html"><button class="slide-button">现在匹配</button></a>
+                </div>
+            </div>
+            <div class="movie">
+                <a href="movie2.html">
+                    <img src="media/movie2.jpg" alt="Movie 2" class="poster_size">
+                </a>
+                <div class="movie-info">
+                    <p1 class="movietitle">黑豹</p1>
+                    <button class="reviews-button">评论</button>
+                    <a href="meeting.html"><button class="slide-button">现在匹配</button></a>
+                </div>
+            </div>
+            <div class="movie">
+                <a href="movie3.html">
+                    <img src="media/movie3.png" alt="Movie 3" class="poster_size">
+                </a>
+                <div class="movie-info">
+                    <p1 class="movietitle">阿利塔</p1>
+                    <button class="reviews-button">评论</button>
+                    <a href="meeting.html"><button class="slide-button">现在匹配</button></a>
+                </div>
+            </div>
+            <div class="movie">
+                <a href="movie4.html">
+                    <img src="media/movie4.png" alt="Movie 4" class="poster_size">
+                </a>
+                <div class="movie-info">
+                    <p1 class="movietitle">神偷奶爸</p1>
+                    <button class="reviews-button">评论</button>
+                    <a href="meeting.html"><button class="slide-button">现在匹配</button></a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- closes the main div -->
+
+    <script src="js/interaction.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/reviews_style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <div class="brand_logo">
+                <img src="media/Logo.png" alt="movie-logo" class="Logo">
+                <h>Viusal Feast</h>
+            </div>
+            <div class="dropLang">
+                <button class="menu-button" id="language-button">English</button>
+                <ul class="dropdown">
+                    <li><a href="#" id="english">English</a></li>
+                    <li><a href="chinese.html" id="chinese">Chinese</a></li>
+                    <li><a href="Thai.html" id="thai">Thai</a></li>
+                    <li><a href="#" id="french">French</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <button id="toggleMenu"><img src="media/menu.png" alt=""></button>
+
+        <div class="page-links">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="heder_munt">
+                <a href="index.html"><button class="menu-button">Home</button></a>
+                <a href="Aboutus.html"><button class="menu-button">About us</button></a>
+                <a class="login" href="Login.html"><button class="menu-button">Login</button></a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="grid-container">
+
+        <div class="main">
+            <div class="contentMax main-content">
+                <div class="comments" id="commentsContainer">
+                    <!-- reviews show here -->
+                </div>
+                <div class="comment-form">
+                    <h2>Add Your Comment</h2>
+                    <div class="form-input">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" class="single-line-input">
+                    </div>
+                    <div class="form-input">
+                        <label for="movie-select">Select a Movie:</label>
+                        <select id="movie-select" class="select-input">
+                            <option value="WARCRAFT">WARCRAFT</option>
+                            <option value="BLACK PANTHER">BLACK PANTHER</option>
+                            <option value="ALIT">ALITA</option>
+                            <option value="DESPICABLEME">DESPICABLEME</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label for="comment-text">Your Comment:</label>
+                        <textarea id="comment-text" class="multi-line-input"></textarea>
+                    </div>
+                    <div class="form-input">
+                        <label for="rating-select">Rating:</label>
+                        <select id="rating-select" class="select-input">
+                            <option value="5">5 STARS</option>
+                            <option value="4">4 STARS</option>
+                            <option value="3">3 STARS</option>
+                            <option value="2">2 STARS</option>
+                            <option value="1">1 STARS</option>
+                        </select>
+                    </div>
+                    <button id="submit-button" class="submit-button">Submit Comment</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- closes the grid-container -->
+    <script src="js/interaction.js"></script>
+    <script src="js/script.js"></script>
+</body>

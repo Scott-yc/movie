@@ -1,0 +1,146 @@
+.grid-container {
+    background-color: #302F2F;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    background: linear-gradient(200deg, #000000, #46546d);
+}
+
+.gallery-img {
+    width: 100%;
+}
+
+.Title {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin: 65px auto;
+}
+
+.grid_tab {
+
+    display: flex;
+
+    align-items: center;
+
+    width: 500px;
+
+    justify-content: space-between;
+
+    margin: 0 auto 30px;
+}
+
+.grid_tab>button {
+
+    width: 49%;
+
+    line-height: 63px;
+
+    border-radius: 8px;
+
+    font-size: 26px;
+}
+
+
+.Name {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    background: #4c4c4c;
+    line-height: 1;
+    padding: 20px 0;
+    border-radius: 3px;
+}
+
+.gallery_figure {
+    display: flex;
+    width: 100%;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1;
+    width: auto;
+    padding: 0;
+    margin: 9px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-item>a {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 116%;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item>a:hover img {
+    transform: scale(1.2);
+}
+
+.gallery-item>a img {
+    transition: 0.3s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item>a .Name {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 7px;
+    color: #fff;
+}
+
+/* This CSS code contains media queries for screen widths up to 720px. */
+
+@media screen and (max-width: 720px) {
+    /* Modifying the font size and margin of elements with the class "Title" */
+    .Title {
+        font-size: 30px;
+        margin: 20px auto;
+    }
+
+    /* Adjusting the font size and line height of buttons inside elements with the class "grid_tab" */
+    .grid_tab>button {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* Adding padding and box-sizing properties to elements with the class "grid-container" */
+    .grid-container {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* Changing the width of elements with the class "grid_tab" */
+    .grid_tab {
+        width: 80%;
+    }
+
+    /* Changing the layout of elements with the class "gallery_figure" to allow them to wrap */
+    .gallery_figure {
+        flex-wrap: wrap;
+    }
+
+    /* Adjusting the width and flex properties of elements with the class "gallery-item" */
+    .gallery-item {
+        width: 100%;
+        flex: auto;
+    }
+}

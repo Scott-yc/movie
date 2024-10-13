@@ -1,0 +1,141 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #302F2F;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto 1fr;
+}
+
+.brand {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background-color: black;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+}
+
+.Logo {
+    width: 70px;
+    height: 45px;
+}
+
+
+.drop {
+    position: relative;
+    display: inline-block;
+}
+
+.choice {
+    display: none;
+    position: absolute;
+    color: #fff;
+    background-color: black;
+    min-width: 20px;
+}
+.drop:hover .choice {
+    display: block;
+    z-index: 5;
+}
+
+.choice a {
+    padding: 2px 20px;
+    text-align: center;
+    display: block;
+    color: inherit;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.choice a:hover {
+    background-color:rgb(228, 116, 230);
+}
+.page-links {
+    display: flex;
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    text-align: right;
+    background-color: black;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.main {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100vw;
+    margin: 0 auto;
+    position: relative;
+}
+.video {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu-button {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 2px 20px;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(110, 0, 0);   
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: rgb(228, 116, 230);
+}
+
+
+.search-bar {
+    display: flex;
+    grid-row: 1;
+    grid-column: 3;
+    text-align: right;
+}
+
+#search-input {
+    width: 100px; /* 调整输入框的宽度 */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#search-button {
+    background-color: black; 
+    color: rgb(250, 250, 250); /* 按钮文本颜色 */
+    border: none;
+    border-radius: 5px;
+    margin-left: 1px; /* 调整按钮与输入框的间距 */
+    margin-right: 5px;
+    cursor: pointer;
+}
+

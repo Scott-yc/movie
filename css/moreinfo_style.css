@@ -1,0 +1,296 @@
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #302F2F;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.main {
+    display: flex;
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background: linear-gradient(200deg, #000000, #46546d);
+}
+
+.pagetitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    font-size: 80px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+.information,
+.chatbox {
+    flex: 1;
+    padding: 20px;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+.chatbox img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.information {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 10px;
+    align-items: center;
+    background-color: #000000;
+    margin: 45px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.information:hover {
+    scale: 1.05;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.904);
+}
+
+.information img {
+    width: 260px;
+    height: auto;
+}
+
+.descontainer {
+    text-align: justify;
+    width: 260px;
+    color: white;
+    font-size: 14px;
+}
+
+.poster-size {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.text {
+    font-size: 25px;
+    color: white;
+}
+
+.option {
+    font-weight: bold;
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+}
+
+.Book {
+    font-size: 40px;
+    width: 250px;
+    height: 50px;
+    background-color: green;
+    margin-left: 30px;
+}
+
+.plot {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.moviedetails {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.model1 {
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.model2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.model3 {
+    grid-column: 1;
+    grid-row: 4;
+    justify-content: center;
+    align-items: center;
+}
+
+.model4 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.Book {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.model5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.snack {
+    grid-column: 2;
+    grid-row: 3 / span 2;
+}
+
+.model6 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.model7 {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+
+
+
+
+
+
+/* Chat Dialog Styles */
+.chatbox {
+    background-color: #000000;
+    padding: 10px;
+    max-height: auto;
+    overflow-y: hidden;
+    margin: 45px;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.chatbox:hover {
+    scale: 1.05;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.904);
+}
+
+.chatbox::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    /* Adapt the inner margin of the chat box */
+    right: 3px;
+    /* Adapt the inner margin of the chat box */
+    width: 10px;
+    /* Width can be adjusted as needed */
+    height: 80%;
+    background: #ccc;
+    /* Background color of the scrollbar */
+    border-radius: 5px;
+    /* Rounded corners of scroll bars */
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+.received {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    /* vertical centering */
+}
+
+/* Input Box and Send Button Styles */
+#userMessage {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#sendMessage {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#sendMessage:hover {
+    background-color: rgb(228, 116, 230);
+}
+
+/* This CSS code contains media queries for screen widths up to 720px. */
+
+@media screen and (max-width: 720px) {
+    /* Modifying the font size and margin of elements with the class "Title" */
+    .Title {
+        font-size: 30px;
+        margin: 20px auto;
+    }
+
+    /* Adjusting the font size and line height of buttons inside elements with the class "grid_tab" */
+    .grid_tab>button {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* Adding padding and box-sizing properties to elements with the class "grid-container" */
+    .grid-container {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* Changing the width of elements with the class "grid_tab" */
+    .grid_tab {
+        width: 80%;
+    }
+
+    /* Changing the layout of elements with the class "gallery_figure" to allow them to wrap */
+    .gallery_figure {
+        flex-wrap: wrap;
+    }
+
+    /* Adjusting the width and flex properties of elements with the class "gallery-item" */
+    .gallery-item {
+        width: 100%;
+        flex: auto;
+    }
+}
